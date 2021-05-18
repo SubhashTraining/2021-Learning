@@ -1,0 +1,48 @@
+[
+  {
+    "empID": 100,
+    "name": "David",
+    "permanent": false,
+    "address": {
+      "street": "BTM 1st Stage",
+      "city": "Bangalore",
+      "zipcode": 560100
+    },
+    "PhoneNumbers": [
+      123456,
+      987654
+    ],
+    "role": "Manager",
+    "cities": [
+      "Los Angeles",
+      "New York"
+    ],
+    "Propeties": {
+      "salary": "1000 Rs",
+      "age": "28 years"
+    }
+  },
+  {
+    "empID": 101,
+    "name": "David",
+    "permanent": false,
+    "address": {
+      "street": "BTM 1st Stage",
+      "city": "Bangalore",
+      "zipcode": 560100
+    },
+    "PhoneNumbers": [
+      123456,
+      987654
+    ],
+    "role": "Manager",
+    "cities": [
+      "Los Angeles",
+      "New York"
+    ],
+    "Propeties": {
+      "salary": "1000 Rs",
+      "age": "28 years"
+    }
+  }
+]
