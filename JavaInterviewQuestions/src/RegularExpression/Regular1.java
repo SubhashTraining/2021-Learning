@@ -25,13 +25,29 @@ public class Regular1 {
 		
 		 //1.Write a regex to split String by new line?
 		 String regex=" ";
-		 String regex1="\\n"; //Split by new line
-		 String regex2="\\r"; //Split by new line also called carraiage return
+		 String regex1="\\n+"; //Split by new line
+		 
+		 String regex2="\\r?"; //Split by new line also called carraiage return
 		 String regex3="\\r?\\n";//Answer
-		 String s ="subhash is \n good \n boy";
-		 String[] string = s.split(regex);
+		 String s ="subhash is \n good \n\n boy";
+		 String s1 ="subhash is \r good boy";
+		 System.out.println(s1);
+		 String[] string = s.split("\\n");
+		 String[] string1 = s.split("\\n?");
+		 String[] string2 = s.split("\\n*");
+		 String[] string3 = s.split("\\n+");
+		 
+		 String[] string4 = s.split("\\n??");
+		 String[] string5 = s.split("\\n*?");
+		 String[] string6 = s.split("\\n+?");
+		 
+		 String[] string7 = s.split("\\n?+");
+		 String[] string8 = s.split("\\n*+");
+		 String[] string9 = s.split("\\n++");
+		 
+		 
 		 for(String ss: string)
-			 System.out.println(ss);
+			 System.out.print(ss);
 		 
 		 //2.What is use of Dot(.) symbol in Java Regex? . represents any number of any characters
 		 
@@ -64,6 +80,7 @@ public class Regular1 {
 		 
 		 
 		 //5.How to replace all non-alphanumeric characters with empty strings?
+		 
 		 
 		  System.out.println("a1A*()".replaceAll("(?i)[a-z0-9]",""));//*()
 		  System.out.println("a1A*()".replaceAll("[a-z0-9A-Z]",""));//*()

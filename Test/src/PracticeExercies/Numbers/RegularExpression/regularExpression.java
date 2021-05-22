@@ -11,7 +11,7 @@ public class regularExpression {
 		//XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 		
 		
-		System.out.println(s.replaceAll("^ssu", "X"));//Replace string su if its at the beginning
+		System.out.println(s.replaceAll("^ssu", "X"));//Replace string ssu if its at the beginning
 		//Xubbhhaasshh 11223344556677
 		
 		System.out.println(s.replaceAll("[abh]", "X"));//replace characters a,b,h by X

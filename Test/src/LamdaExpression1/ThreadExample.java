@@ -49,6 +49,19 @@ public static void main(String[] args)
 		return employee.getName().substring(employee.getName().indexOf(' ')+1);
 	};
 	
+	Function<Employee,String> function = new Function<Employee,String>(){
+
+		@Override
+		public String apply(Employee employee) {
+			// TODO Auto-generated method stub
+			return employee.getName().substring(employee.getName().indexOf(' ')+1);
+		}
+		
+		
+		
+	};
+	
+	
 	System.out.println("_____________________________________");
 	for(Employee employee: employees)
 	{
@@ -58,7 +71,12 @@ public static void main(String[] args)
 	
 	
 	
+	System.out.println("_____________________________________");
+	for(Employee employee: employees)
+	{
 	
+		System.out.println(function.apply(employee));
+	}
 	
 	
 }

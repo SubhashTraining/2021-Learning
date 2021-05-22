@@ -41,9 +41,7 @@ public class Permutation_Char_Strings {
 			{
 				//System.out.println(i+" "+StaticValue+word.charAt(i)+" - "+word.substring(0,i)+word.substring(i+1));
 				stringPerumutations(StaticValue+word.charAt(i),word.substring(0,i)+word.substring(i+1));
-				
-				
-				
+						
 			}
 		}
 		

@@ -8,7 +8,7 @@ public class Scanne {
 		// TODO Auto-generated method stub
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println(in.next());
+		System.out.println(in.nextLine());
 		System.out.println(in.next());
 		System.out.println(in.next());
 		System.out.println(in.next());

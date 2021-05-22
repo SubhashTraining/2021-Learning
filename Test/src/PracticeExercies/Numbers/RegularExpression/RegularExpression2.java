@@ -43,7 +43,7 @@ public class RegularExpression2 {
 		/*
 		 Matcher.matches -  Attempts to match the entire region against the pattern. 
 		 
-		 Matcher.find 	 - Attempts to find the next subsequence of the input sequence that matchesthe pattern. 
+		 Matcher.find 	 - Attempts to find the next subsequence of the input sequence that matches the pattern. 
 		 This method starts at the beginning of this matcher's region, or, if a previous invocation of the method was successful 
 		 and the matcher has not since been reset, at the first character not matched by the previous match. 
 

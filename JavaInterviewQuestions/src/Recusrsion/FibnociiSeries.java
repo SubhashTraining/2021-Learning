@@ -11,24 +11,41 @@ package Recusrsion;
  */
 
 
+import java.util.Scanner;
+
 public class FibnociiSeries {
-	
-	
-	public static void main(String[] args)
-	{
-		System.out.println(fibnocii(15));
-	}
-	
-	public static int fibnocii(int n){
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		if(n==1 ||  n==2)
+		Scanner in = new Scanner(System.in);
+		System.out.println("\nEnter the limit:\n");
+		int input = in.nextInt();
+		System.out.println("\n");
+		for(int i=1;i<=input;i++)
 		{
-			return 1;
+			int no = getFibnoci(i);
+			System.out.print(no+" ");
 		}
 		
-		return fibnocii(n-2)+fibnocii(n-1);
+
+	}
+	
+	public static int getFibnoci(int input)
+	{
+		
+		
+		if(input==0 || input ==1)
+			return 1;
+		else
+		{
+			return getFibnoci(input-1)+getFibnoci(input-2);
+		}
 		
 		
 	}
 
 }
+
+
+

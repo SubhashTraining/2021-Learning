@@ -66,6 +66,7 @@ public class ReverseString {
 			j--;
 		}		
 		System.out.println(charArray.toString());//[C@6e5e91e4- return as return(charArray)
+		System.out.println(charArray);//print the array as String
 		return new String(charArray);
 		
 		
