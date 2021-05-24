@@ -53,18 +53,36 @@ public class Reflections {
 		
 		Constructor[] constructors = cl.getDeclaredConstructors(); //import java.lang.reflect;
 		int i=1;
-		for(Constructor constructor:constructors)
+		for(Constructor constructor : constructors)
 		{
 			
-			System.out.println("Constructor: "+i);
-			String modifier = Modifier.toString(constructor.getModifiers());
-			Class[] parameterTypes = constructor.getParameterTypes(); //anything that returns type are Class Objects . Eg ReturnType/ParameterType
-			for(Class param:parameterTypes)
+			StringBuilder sb = new StringBuilder();
+			String mods= Modifier.toString(cl.getModifiers());
+			sb.append(mods);
+			
+			sb.append(constructor.getName()+"["+constructor.getParameterCount()+"](");
+			
+			Class[] parameters = constructor.getParameterTypes();
+			int size =0;
+			for(Class parameter: parameters)
 			{
-				System.out.print(param.getSimpleName()+";");
+				
+				sb.append(parameter.getSimpleName());
+				if(size==parameters.length-1)
+				{
+					sb.append(")");
+					
+				}
+				else
+				{
+					sb.append(",");
+				}
+			
+				size++;
+				
 			}
-			System.out.println();
-			i++;
+			System.out.println(sb.toString());
+			
 			
 		}
 		
@@ -112,6 +130,23 @@ public class Reflections {
 		System.out.println(m2.invoke(date).toString());
 		
 		
+		Method setYear = Date.class.getDeclaredMethod("setYear",int.class);
+		Date date1 = new Date();
+		
+		System.out.println("********Method Invoke******************");
+		setYear.invoke(date1, 1998);
+		System.out.println(date1.toString());
+		
+		
+		
+		//Invoke Constuctor
+		Class[] classtypes = new Class[]{int.class,int.class,int.class};
+		Class DateClass = Date.class;
+		Constructor constructor = DateClass.getDeclaredConstructor(classtypes);
+		Object[] args1 = new Object[]{1995,11,12};
+		
+		Date dateObject = (Date) constructor.newInstance(args1);
+		System.out.println(dateObject.toString());
 		
 		
 		

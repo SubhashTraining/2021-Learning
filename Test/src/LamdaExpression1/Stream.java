@@ -2,6 +2,7 @@ package LamdaExpression1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Stream {
@@ -33,6 +34,8 @@ public class Stream {
 		
 		bNumbers.sort((s1,s2)-> s1.compareTo(s2));
 		bNumbers.forEach(no -> System.out.println(no));
+		
+		Collections.sort(bNumbers);
 		
 	}
 

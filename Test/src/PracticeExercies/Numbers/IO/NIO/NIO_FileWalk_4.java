@@ -19,14 +19,14 @@ public class NIO_FileWalk_4 {
 		Path TragetRoot = Paths.get("C:\\Users\\778294\\workspace\\Test\\src\\PracticeFiles\\FileWalkTree\\Dir4");
 		Path traverseFrom = Paths.get("C:\\Users\\778294\\workspace\\Test\\src\\PracticeFiles\\FileWalkTree\\Dir2");
 		
-		int i=0;
+		int i=1;
 		if(i==1)
 		
 		{
 		
 		try {
 			Files.walkFileTree(traverseFrom, new NIO_FileWalk_3(soureRoot,TragetRoot));
-			
+				
 			
 			
 		} catch (IOException e) {

@@ -77,7 +77,7 @@ public class ArrayListExample {
 		ListIterator<Integer> lItr = integerArrayList.listIterator();
 		
 		
-		//lItr.set(15);//throws exception as set can be only used after next or previous
+		//lItr.set(15);//throws  java.lang.IllegalStateException  as set can be only used after next or previous
 		
 		//initally cursor=0 lastReturn =-1	
 		int next = lItr.next();//returns the element in the cursor and move to next cursor. Cursor =0
@@ -184,6 +184,36 @@ public class ArrayListExample {
 			
 			
 		});
+		
+		
+		
+		List<String> string = Arrays.asList("A12","A14","A13","b12","B14","B17","B18","C12","C15");
+		
+		List<String> bnos = new ArrayList<>();
+		string.forEach((bingos)-> {
+			
+		if(bingos.toUpperCase().startsWith("B")){
+			bnos.add(bingos);
+		}});
+		
+
+		Collections.sort(bnos);
+		bnos.sort((c1,c2)->c1.compareTo(c2));
+		
+		
+		/*
+		 	Collections.swap(list,i,j)
+		 	collections.shuffle()
+		 	Collections.reverse
+		 	Collections.copy
+		 	Collections.sort
+		 	list.sort(Comparator)
+		 	
+		 	
+		 	
+		 	
+		 */
+		
 		
 				
 	}

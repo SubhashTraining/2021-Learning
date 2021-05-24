@@ -102,7 +102,34 @@ public class map1 {
 		});
 		System.out.println();
 		
+		
+		
+		
+		String existingValue = Favbooks.getOrDefault("Java","Mava");
+		if(existingValue.equals("Java"));
+		
+		Map<String,Integer> duplicateWords = new HashMap<>();
+		String[] string = "find find duplicate duplicate words words words".split(" ");
+		
+		for(int i=0;i<string.length;i++)
+		{
+			
+			int count = duplicateWords.getOrDefault(string[i],0);
+			duplicateWords.put(string[i], count+1);
+			
+		}
+		
+		
+		 duplicateWords.entrySet().stream().map(e->e.getValue()==1).collect(Collectors.toList());
+		 
+		
+		
 	}
+	
+	
+	
+	
+	
 	
 
 }

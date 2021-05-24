@@ -1,6 +1,7 @@
 package PracticeExercies.Numbers;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 public class PrimitiveTypes {
 	
@@ -21,11 +22,17 @@ public class PrimitiveTypes {
 		System.out.println(floatvalue);//728768.52
 		System.out.printf("%.3f",value);//728768.524
 		System.out.println();
+		int i=1;		
+		System.out.println(String.format("%04d",i));//0001	need to specify 0 to replace blank with0
 		System.out.println(String.format("%.2f", value));//728768.52
 		System.out.printf("%,.4f",value);//728,768.5242
 		System.out.println();
 		System.out.printf("%d %s", 32,"Subhash");//32 Subhash   d- decimal , f- float, c - character, b-boolean, s-string)
 		System.out.println();
+		
+		
+	
+		
 		
 		int secondPart = 300;
 		String conatc = "Concat"+secondPart;
@@ -47,6 +54,9 @@ public class PrimitiveTypes {
 		System.out.println(number);//105
 		
 		//Convert lower case to upper case 
+		//A-Z 65 to 90 a-z 97-122
+		
+		
 		String string= "Subhash";
 		char[] stringArray = string.toCharArray();
 		for(char c:stringArray)
@@ -65,14 +75,14 @@ public class PrimitiveTypes {
 		}
 		System.out.println();
 		
-		
+		System.out.println(stringArray);//will return string of the char Array
 			
 		//String Builder
 		
 		StringBuilder builder = new StringBuilder("Subhash Sanjay Suganya");
 		builder.append(" family");
 		System.out.println(builder);//Subhash Sanjay Suganya family
-		builder.delete(0, 7);//deletes 7-1
+		builder.delete(0, 7);//deletes inde [7-1]
 		System.out.println(builder);//Subhash Sanjay Suganya family
 		builder.trimToSize();
 		builder.substring(0);
@@ -102,6 +112,17 @@ public class PrimitiveTypes {
 		sbuffer.insert(4, "Subhash");
 		sbuffer.trimToSize();
 		//same as builder
+		
+		
+		String s= "SUBHASH";
+		
+		char[] charArray = s.toCharArray();
+		System.out.println(Arrays.toString(charArray));//[s, u, b, h, a, s, h]
+		System.out.println(charArray);//subhash
+		
+		
+		int[] ikdf={1,2,3,4,4,44,3};
+		System.out.println(Arrays.toString(ikdf).replaceAll("[, \\[\\]]",""));//12344443
 		
 		
 	}
