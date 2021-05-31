@@ -21,7 +21,7 @@ public class Main2 {
 		
 		String sep = File.separator;
 		try(InputStream is = new FileInputStream("src"+sep+"PracticeExercies"+sep+"Numbers"+sep+"JSON"+sep+"JSON3"+sep+"json1.json");
-				InputStreamReader isr = new InputStreamReader(is); JsonReader reader = new JsonReader(isr)){
+			InputStreamReader isr = new InputStreamReader(is); JsonReader reader = new JsonReader(isr)){
 			
 			
 			List<BakedProducts> products = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Main2 {
 			products.forEach(i->System.out.println(i));	
 		}
 					
-
+		
 	}
 	
 	public static BakedProducts gsonParseReader(JsonReader reader) throws IOException
