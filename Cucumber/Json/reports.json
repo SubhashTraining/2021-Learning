@@ -1,0 +1,72 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-25T10:30:51.018Z",
+        "line": 4,
+        "name": "Google HomePage Open Check",
+        "description": "",
+        "id": "test-amazon-login-page;google-homepage-open-check",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens the browser",
+            "match": {
+              "location": "test.StepDefinition.loginStepsDefinition.user_opens_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the amazon url in the browser and press enter",
+            "match": {
+              "location": "test.StepDefinition.loginStepsDefinition.user_enters_the_amazon_url_in_the_browser_and_press_enter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Amazon Home Page Opens",
+            "match": {
+              "location": "test.StepDefinition.loginStepsDefinition.amazon_home_page_opens()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The title displays",
+            "match": {
+              "location": "test.StepDefinition.loginStepsDefinition.the_title_displays()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Amazon login page",
+    "description": "",
+    "id": "test-amazon-login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/Features/login.feature",
+    "tags": []
+  }
+]
