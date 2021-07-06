@@ -18,7 +18,7 @@ public class ConvertDecimalToBinary {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		decimalToBinary(20);
+		decimalToBinary(8);
 		
 
 	}

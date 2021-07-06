@@ -1,9 +1,6 @@
 package StringQuestions;
 
-import static org.junit.Assert.*;
 
-import org.junit.Assert;
-import org.junit.Test;
 
 /*
  * public String reverse(String string)
@@ -46,8 +43,11 @@ import org.junit.Test;
 
 public class ReverseString {
 	
-	
-	public String reverse(String string)
+	public static void main(String agrs[])
+	{
+		
+	}
+	public static  String reverse(String string)
 	{
 		if(string==null || string.isEmpty())
 		{
@@ -82,38 +82,7 @@ public class ReverseString {
 		
 	}	
 		
+}	
 		
-		
 	
-	@Test
-	public void reverseEmptyString() {
-		Assert.assertEquals("",reverse(""));
-		//throwed Assert is depreciated as i was using import junit.framework.Assert; instead of import static org.junit.Assert.*;		
-	}
-
-	@Test
-	public void reverseNullString()
-	{
-		Assert.assertEquals(null,reverse(null));
-	}
 	
-	@Test
-	public void PositiveTest1()
-	{
-		Assert.assertEquals("abc",reverse("cba"));
-	}
-	
-	@Test
-	public void PositiveTest2()
-	{
-		Assert.assertEquals("Nelson", reverse("nosleN"));
-			
-	}
-	
-	@Test
-	public void NegativeTest()
-	{
-		Assert.assertEquals("abc", reverse("abc"));
-	}
-	
-}

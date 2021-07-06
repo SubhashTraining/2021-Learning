@@ -38,7 +38,7 @@ public class Exercise1 {
 		
 		
 		//Replace characters that are not 3 or A and those characters should be followed by k. onky kkka kibe gets replaces. then bext k has 3 followed
-		System.out.println("AJhsdj1333kkk3k".replaceAll("[^3A][k]", "*")); //A******333***3*
+		System.out.println("AJhsdj1333kkk3k".replaceAll("[^3A][k]", "*"));
 		
 		//Range [] 
 		
@@ -47,7 +47,7 @@ public class Exercise1 {
 		
 		//Case Sensivitve Relace lower and Upper Case (?i) replaces lower and upper case of A-Z
 		System.out.println("#AJhs$dj1333k^kk3_k".replaceAll("(?i)[A-Z 1-9]", "*"));
-		
+	 	
 		
 		//Replace all decimals
 		System.out.println("#AJhs$dj1333k^kk3_k".replaceAll("\\d", "*"));//#AJhs$dj****k^kk*_k
@@ -215,9 +215,11 @@ public class Exercise1 {
 		s="foolish1foolish2foolish3foolish4foolish5foolish6foolish7foolish8foolish9foolish0";
 		System.out.println(s.replaceAll("foolish[1-4[^8-9]]", "X"));// XXXXXXXfoolish8foolish9X
 
-		
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		s="foolish1foolish2foolish3foolish4foolish5foolish6foolish7foolish8foolish9foolish0";
 		System.out.println(s.replaceAll("foolish[^1-4[^8-9]]", "X"));// XXXXXXXXXX :this nullifies everthing. think deep
+		
+		System.out.println("0123456789".replaceAll("[^1-4[^8-9]]", "X"));//XXXXXXXXXX
 		
 		
 		//Intersection
@@ -263,7 +265,7 @@ public class Exercise1 {
 		System.out.println(s.replaceAll("[amn]?", "X"));//XX
 		
 		s="am";
-		System.out.println(s.replaceAll("[amn]?", "X"));//XX
+		System.out.println(s.replaceAll("[amn]?", "X"));//XXX
 	}
 	
 

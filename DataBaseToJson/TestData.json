@@ -1,0 +1,32 @@
+[
+  {
+    "CourseName": "selenium",
+    "PurchasedDate": "2021-06-18",
+    "Amount": 120,
+    "Location": "Africa"
+  },
+  {
+    "CourseName": "Protractor",
+    "PurchasedDate": "2021-06-18",
+    "Amount": 45,
+    "Location": "Africa"
+  },
+  {
+    "CourseName": "Appium",
+    "PurchasedDate": "2021-06-18",
+    "Amount": 99,
+    "Location": "Asia"
+  },
+  {
+    "CourseName": "WebServices",
+    "PurchasedDate": "2021-06-18",
+    "Amount": 21,
+    "Location": "Asia"
+  },
+  {
+    "CourseName": "Jmeter",
+    "PurchasedDate": "2021-06-18",
+    "Amount": 76,
+    "Location": "Asia"
+  }
+]

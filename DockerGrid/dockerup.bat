@@ -1,0 +1,1 @@
+docker-compose -f docker-compose2.yaml up --scale chrome=4 --scale firefox=4 >>output.txt

@@ -1,0 +1,5 @@
+When creating docker 
+
+version: "3"
+
+always leave a space after(:)Eg(: "version")
